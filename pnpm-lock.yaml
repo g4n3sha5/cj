@@ -41,6 +41,9 @@ importers:
       next:
         specifier: ^14.0.4
         version: 14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next-compose:
+        specifier: ^0.0.2
+        version: 0.0.2
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -845,6 +848,9 @@ packages:
 
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+
+  next-compose@0.0.2:
+    resolution: {integrity: sha512-ge8RvLId/wRvKRyBtJfm6oTDuknddBuqDmKSxhzTTtsK1fddtfMOYLz8BenJJG/8pBfvXVteq9JxBoCiRqFbIA==}
 
   next@14.1.4:
     resolution: {integrity: sha512-1WTaXeSrUwlz/XcnhGTY7+8eiaFvdet5z9u3V2jb+Ek1vFo0VhHKSAIJvDWfQpttWjnyw14kBeq28TPq7bTeEQ==}
@@ -1915,6 +1921,8 @@ snapshots:
   nanoid@3.3.7: {}
 
   neo-async@2.6.2: {}
+
+  next-compose@0.0.2: {}
 
   next@14.1.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:

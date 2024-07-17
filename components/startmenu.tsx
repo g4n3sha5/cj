@@ -33,15 +33,14 @@ export const StartMenu = () => {
               <Image
                 src={cross}
                 alt="cross"
-                className=" w- h-auto group-hover:block hidden absolute -left-20 "
+                className=" w-20 h-auto group-hover:block hidden absolute -left-20 "
                 width={0}
                 height={0}
               />
               {item.label}
             </button>
           ))}
-        </div>
-
+        </div>`react-app-env.
         <Image
           src={heroimg}
           width={0}
