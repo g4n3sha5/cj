@@ -1,5 +1,3 @@
-/** @type {import('next').NextConfig} */
-
 module.exports = {
   webpack: (config, options) => {
     const { isServer } = options;
