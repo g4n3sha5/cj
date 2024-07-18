@@ -5,8 +5,9 @@ import cross from '@/public/images/cross.png';
 import Image from 'next/image';
 import useSound from 'use-sound';
 import buttonHoverSound from '@/public/sound.mp3';
-import { Toast } from '@radix-ui/react-toast';
 import { useState } from 'react';
+import Link from 'next/link';
+import theme from '@/public/theme.mp3';
 
 const menuItems = [
   { label: 'start', link: '/' },
@@ -16,10 +17,10 @@ const menuItems = [
 ];
 
 export const StartMenu = () => {
-  const soundUrl = buttonHoverSound;
-  const [play] = useSound(soundUrl);
+  const [play] = useSound(buttonHoverSound);
   const [clicked, setClicked] = useState(false);
 
+  const [playTheme] = useSound(theme);
   return (
     <section className=" bg-white relative pb-[30vh] xl:pb-[30px] min-h-screen overflow-hidden xl:h-screen flex pt-0 font-bankgothic">
       {/* Hero content */}
@@ -27,20 +28,23 @@ export const StartMenu = () => {
         <div className="basis-full  py-10 z-30 flex flex-col items-center  text-4xl uppercase font-normal text-[#b5c0d5] tracking-[6px]  ">
           {menuItems.map((item) => (
             <button
-              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => play()}
+              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{  play()}}
               className="flex group relative w-92 uppercase scale-y-95"
             >
-              <Image
-                src={cross}
-                alt="cross"
-                className=" w-20 h-auto group-hover:block hidden absolute -left-20 "
-                width={0}
-                height={0}
-              />
-              {item.label}
+              <Link href="/loading">
+                <Image
+                  src={cross}
+                  alt="cross"
+                  className=" w-20 h-auto group-hover:block hidden absolute -left-20 "
+                  width={0}
+                  height={0}
+                />
+                {item.label}
+              </Link>
             </button>
           ))}
-        </div>`react-app-env.
+        </div>
+
         <Image
           src={heroimg}
           width={0}

@@ -65,7 +65,7 @@ export default function Navbar() {
             {navItems.map((navItem) => {
               return (
                 <a
-                  className="text-white hover:text-neutral-500   text-3xl  font-wider gap-x-3 p-3 rounded-xl   flex items-center justify-center px-5  hover:no-underline transition-all cursor-pointer text-nowrap"
+                  className="text-white hover:text-green-600   text-3xl  font-wider gap-x-3 p-3 rounded-xl   flex items-center justify-center px-5  hover:no-underline transition-all cursor-pointer text-nowrap"
                   href={navItem.url}
                   target="_blank"
                   rel="noreferrer"

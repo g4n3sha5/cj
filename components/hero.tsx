@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Toaster } from '@/components/ui/toaster';
 import { useToast } from '@/components/ui/use-toast';
-import { buttons } from '@/public/constants';
+import { buttons, ca } from '@/public/constants';
 import heroimg from '@/public/images/hero.webp';
 import content from '@/public/images/logo.png';
 import Image from 'next/image';
@@ -24,6 +24,11 @@ export default function Hero() {
             <button className="bg-themeSecondary text-black p-3 rounded-lg font-light hover:scale-105 text-3xl px-6 mt-4">
               Chart
             </button>
+
+            <div className="mt-3 text-2xl">
+              Contract Address:
+              <br /> {ca}
+            </div>
           </div>
           <div className="flex mt-10">
             {buttons.map(({ url, img, text }) => (
