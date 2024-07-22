@@ -10,8 +10,8 @@ export const telegram = 'https://t.me/CJonSolana';
 export const twitter = 'https://x.com/CarlJohnsunSol';
 export const dextools = '';
 
-export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
-// export const dex = true && ca != '' ? `https://dexscreener.com/solana/${ca}` : '';
+// export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
+export const dex = true && ca != '' ? `https://dexscreener.com/solana/${ca}` : '';
 
 export const pump: string = ca != '' ? `https://www.pump.fun/${ca}` : '';
 

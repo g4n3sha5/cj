@@ -9,12 +9,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 import theme from '@/public/theme.mp3';
 import { LoadingScreen } from '@/components/loadingscreen';
+import { dex, telegram, twitter } from '@/public/constants';
 
 const menuItems = [
   { label: 'start game', link: 'loading' },
-  { label: 'telegram', link: '/about' },
-  { label: 'twitter', link: '/contact' },
-  { label: 'chart', link: '/contact' },
+  { label: 'telegram', link: telegram },
+  { label: 'twitter', link: twitter },
+  { label: 'chart', link: dex },
 ];
 
 export const StartMenu = () => {
