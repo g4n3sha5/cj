@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Carl Johnson - $CJ - Stay true to the Grove',
-  description: 'Welcome to our private domicile, bitch!',
+  title: 'Carl Johnsun - $CJ - Stay true to the Grove',
+  description: '',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -56,7 +56,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           {/* <Footer /> */}
         </div>
-   
       </body>
     </html>
   );
