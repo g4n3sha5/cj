@@ -4,10 +4,10 @@ import twitterimg from '@/public/images/twitter.png';
 import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
-export const ca: string = 'TBA';
-export const telegram = '';
+export const ca: string = 'F89P65Kz6FSL75uSfqw27HYgLJmc2XocTGXicfEHpump';
+export const telegram = 'https://t.me/CJonSolana';
 ``;
-export const twitter = '';
+export const twitter = 'https://x.com/CarlJohnsunSol';
 export const dextools = '';
 
 export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
