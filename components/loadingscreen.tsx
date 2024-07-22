@@ -14,7 +14,6 @@ export const LoadingScreen = () => {
   let randomScreenNumber = 1;
   const [progress, setProgress] = React.useState(0);
 
-
   useEffect(() => {
     randomScreenNumber = Math.floor(Math.random() * 3);
   }, []);
@@ -28,7 +27,7 @@ export const LoadingScreen = () => {
     return redirect('/about');
   }
   return (
-    <section className=" bg-white relative pb-[30vh] xl:pb-[30px] min-h-screen overflow-hidden xl:h-screen flex pt-0 font-bankgothic ">
+    <section className=" bg-white z-50 absolute inset-0  pb-[30vh] xl:pb-[30px] min-h-screen overflow-hidden xl:h-screen flex pt-0 font-bankgothic ">
       {/* Hero content */}
 
       <div className="flex flex-wrap w-full pb-44 md:pb-20  items-center h-full gap-y-3  xl:justify-between px-5 lg:px-20 justify-center ">

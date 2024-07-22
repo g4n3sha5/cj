@@ -9,11 +9,8 @@ import meme4 from '@/public/images/meme4.webp';
 import meme5 from '@/public/images/meme5.webp';
 import meme6 from '@/public/images/meme6.webp';
 import meme7 from '@/public/images/meme7.webp';
-import meme8 from '@/public/images/meme8.webp';
-// import meme9 from '@/public/images/meme9.webp';
-// import meme10 from '@/public/images/meme10.webp';
-// import meme11 from '@/public/images/meme11.webp';
-// import meme12 from '@/public/images/meme12.webp';
+import meme8 from '@/public/images/about.webp';
+
 import Image from 'next/image';
 
 const memes = [meme1, meme2, meme3, meme5, meme4, meme6, meme7, meme8];

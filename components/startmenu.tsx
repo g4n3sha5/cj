@@ -8,9 +8,10 @@ import buttonHoverSound from '@/public/sound.mp3';
 import { useState } from 'react';
 import Link from 'next/link';
 import theme from '@/public/theme.mp3';
+import { LoadingScreen } from '@/components/loadingscreen';
 
 const menuItems = [
-  { label: 'start', link: '/' },
+  { label: 'start game', link: 'loading' },
   { label: 'telegram', link: '/about' },
   { label: 'twitter', link: '/contact' },
   { label: 'chart', link: '/contact' },
@@ -19,6 +20,7 @@ const menuItems = [
 export const StartMenu = () => {
   const [play] = useSound(buttonHoverSound);
   const [clicked, setClicked] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [playTheme] = useSound(theme);
   return (
@@ -28,10 +30,16 @@ export const StartMenu = () => {
         <div className="basis-full  py-10 z-30 flex flex-col items-center  text-4xl uppercase font-normal text-[#b5c0d5] tracking-[6px]  ">
           {menuItems.map((item) => (
             <button
-              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) =>{  play()}}
+              onMouseEnter={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+                play();
+              }}
+              onClick={() => {
+                item.link === 'loading' && setLoading(true);
+                playTheme();
+              }}
               className="flex group relative w-92 uppercase scale-y-95"
             >
-              <Link href="/loading">
+              <Link href={item.link !== 'loading' ? item.link : '#'}>
                 <Image
                   src={cross}
                   alt="cross"
@@ -62,6 +70,8 @@ export const StartMenu = () => {
           <div className="text-white text-5xl relative font-cuprum">Click anywhere for sound </div>
         </div>
       </div>
+
+      {loading && <LoadingScreen />}
     </section>
   );
 };

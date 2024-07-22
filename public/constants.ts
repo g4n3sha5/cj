@@ -4,7 +4,7 @@ import twitterimg from '@/public/images/twitter.png';
 import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
-export const ca: string = 'ababaabaa7c896147aaBD466fd995a40aCED5B017e';
+export const ca: string = 'TBA';
 export const telegram = '';
 ``;
 export const twitter = '';

@@ -3,10 +3,11 @@
 import { Button } from '@/components/ui/button';
 import { Toaster } from '@/components/ui/toaster';
 import { useToast } from '@/components/ui/use-toast';
-import { buttons, ca } from '@/public/constants';
+import { buttons, ca, pump } from '@/public/constants';
 import heroimg from '@/public/images/hero.webp';
 import content from '@/public/images/logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   const { toast } = useToast();
@@ -19,11 +20,12 @@ export default function Hero() {
           <div className="bg-theme w-full xl:px-16 py-10 pb-14 text-center lg:text-left my-6  text-white  self-start">
             <h2 className=" text-4xl font-semibold tracking-tight">Oh shit, here we go again</h2>
 
-            {/* <h2 className="text-white text-3xl tracking-tight">Let's cook!</h2> */}
-
-            <button className="bg-themeSecondary text-black p-3 rounded-lg font-light hover:scale-105 text-3xl px-6 mt-4">
+            <Link
+              href={pump}
+              className="bg-green-500 text-black p-3 rounded-lg font-light hover:scale-105 text-3xl px-6 mt-6 inline-block hover:bg-green-400"
+            >
               Chart
-            </button>
+            </Link>
 
             <div className="mt-3 text-2xl">
               Contract Address:
@@ -43,6 +45,7 @@ export default function Hero() {
 
         <Image
           src={heroimg}
+          priority={true}
           width={0}
           height={0}
           className="absolute inset-0  z-20 bottom-0 w-full h-full object-fill"
