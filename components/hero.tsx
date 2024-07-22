@@ -48,7 +48,7 @@ export default function Hero() {
           priority={true}
           width={0}
           height={0}
-          className="absolute inset-0  z-20 bottom-0 w-full h-full object-fill"
+          className="absolute inset-0  z-20 bottom-0 w-full h-full object-cover lg:object-fill"
           alt="Background"
         />
       </div>

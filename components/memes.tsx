@@ -30,12 +30,12 @@ export default function Memes() {
             alt="LFG"
           /> */}
 
-          <div className="w-full flex justify-center gap-x-5 flex-wrap">
+          <div className="w-full flex justify-center gap-x-5 flex-wrap pt-12 ">
             {memes.map((meme) => (
               <div
                 data-aos="flip-left"
                 data-aos-duration="1500"
-                className="relative z-30 flex basis-3/4 lg:basis-1/5 items-center justify-center pt-32 lg:pt-10 px-7 lg:px-4 lg:pb-4 pb-10 overflow-hidden"
+                className="relative z-30 flex basis-4/5 lg:basis-1/5 items-center justify-center lg:pt-10 lg:px-4 lg:pb-4 pb-10 overflow-hidden"
               >
                 <Image src={meme} width={0} height={0} className="w-full h-full inset-0 object-fit " alt="Meme" />
               </div>
@@ -48,7 +48,7 @@ export default function Memes() {
           src={heroimg}
           width={0}
           height={0}
-          className="mt-[6.5rem] absolute inset-0  z-20 bottom-0 w-full h-full object-cover object-left-bottom"
+          className=" absolute inset-0  z-20 bottom-0 w-full h-full object-cover object-left-bottom"
           alt="LFG"
         />
       </div>

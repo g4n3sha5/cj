@@ -6,20 +6,19 @@ import loading3 from '@/public/images/loading3.png';
 import Image from 'next/image';
 import { Progress } from '@/components/ui/progress';
 import { redirect } from 'next/navigation';
-import React, { useEffect } from 'react';
-import useSound from 'use-sound';
+import React, { useEffect, useState } from 'react';
 
 export const LoadingScreen = () => {
   const loadingScreens = [loading1, loading2, loading3];
-  let randomScreenNumber = 1;
+  const [randomScreenNumber, setRandomScreenNumber] = useState(1);
   const [progress, setProgress] = React.useState(0);
 
   useEffect(() => {
-    randomScreenNumber = Math.floor(Math.random() * 3);
+    setRandomScreenNumber(Math.floor(Math.random() * 3));
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(progress + 1), 65);
+    const timer = setTimeout(() => setProgress(progress + 1), 85);
     return () => clearTimeout(timer);
   }, [progress]);
 
@@ -38,7 +37,7 @@ export const LoadingScreen = () => {
           className="absolute inset-0  z-20  w-full h-full  object-cover lg:object-fill"
           alt="Background"
         />
-        <Progress value={progress} className="lg:w-96 z-30 absolute lg:left-40 lg:bottom-16 bottom-1/2 w-2/3" />
+        <Progress value={progress} className="lg:w-96 z-30 absolute lg:left-48 lg:bottom-16 bottom-1/2 w-2/3" />
       </div>
     </section>
   );
