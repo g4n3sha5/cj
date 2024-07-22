@@ -40,7 +40,7 @@ export default function Navbar() {
       <nav className="w-full lg:w-3/4 mx-auto h-full flex items-center justify-around">
         <Link className="shrink-0 h-3/4 mr-4  flex items-center gap-x-3 lg:gap-x-7 " href="/">
           <Logo />
-          <Image src={caption} priority={true} width={0} height={0} className="h-1/2 lg:h-2/3 w-auto mt-3" alt="LFG" />
+          <Image src={caption} priority={true} width={0} height={0} className="h-1/2 lg:h-2/3 w-auto" alt="LFG" />
         </Link>
 
         <button

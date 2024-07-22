@@ -18,7 +18,7 @@ export const LoadingScreen = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(progress + 1), 85);
+    const timer = setTimeout(() => setProgress(progress + 1), 70);
     return () => clearTimeout(timer);
   }, [progress]);
 
