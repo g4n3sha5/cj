@@ -11,8 +11,8 @@ import { List, ListIcon, Menu } from 'lucide-react';
 const navItems = [
   { label: 'Telegram', url: telegram },
   { label: 'Twitter', url: twitter },
-  { label: 'PumpFun', url: pump },
-  // { label: 'Dex Screener', url: dex },
+  // { label: 'PumpFun', url: pump },
+  { label: 'Dex Screener', url: dex },
 ];
 
 export default function Navbar() {

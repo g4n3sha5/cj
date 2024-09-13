@@ -11,7 +11,8 @@ export const twitter = ' https://x.com/CarlJohnsonSol';
 export const dextools = '';
 
 // export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
-export const dex = true && ca != '' ? `https://dexscreener.com/solana/${ca}` : '';
+export const dex =
+  true && ca != '' ? `https://dexscreener.com/solana/bxjdawdughr8sn81mgefzfasvtuvb4ugpabqkqr58lnm` : '';
 
 export const pump: string = ca != '' ? `https://www.pump.fun/${ca}` : '';
 
