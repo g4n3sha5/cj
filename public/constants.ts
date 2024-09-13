@@ -4,7 +4,7 @@ import twitterimg from '@/public/images/twitter.png';
 import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
-export const ca: string = 'F89P65Kz6FSL75uSfqw27HYgLJmc2XocTGXicfEHpump';
+export const ca: string = '';
 export const telegram = 'https://t.me/Carl_JohnsonSOL';
 ``;
 export const twitter = ' https://x.com/CarlJohnsonSol';
@@ -18,7 +18,7 @@ export const pump: string = ca != '' ? `https://www.pump.fun/${ca}` : '';
 export const buttons = [
   { text: 'Twitter', url: twitter, img: twitterimg },
   { text: 'Telegram', url: telegram, img: telegramimg },
-  { text: 'PumpFun', url: pump, img: pumpimg },
+  // { text: 'PumpFun', url: pump, img: pumpimg },
   { text: 'DexScreener', url: dex, img: deximg },
   { text: 'DexTools', url: dextools, img: dextoolsimg },
 ].filter((button) => button.url != '');
