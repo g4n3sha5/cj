@@ -5,9 +5,9 @@ import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
 export const ca: string = 'F89P65Kz6FSL75uSfqw27HYgLJmc2XocTGXicfEHpump';
-export const telegram = 'https://t.me/CJonSolana';
+export const telegram = 'https://t.me/Carl_JohnsonSOL';
 ``;
-export const twitter = 'https://x.com/CarlJohnsunSol';
+export const twitter = ' https://x.com/CarlJohnsonSol';
 export const dextools = '';
 
 // export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';

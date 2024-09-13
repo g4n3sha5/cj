@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Carl Johnsun - $CJ - Stay true to the Grove',
+  title: 'Carl Johnson - $CJ - Stay true to the Grove',
   description: '',
 };
 
