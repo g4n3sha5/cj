@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Toaster } from '@/components/ui/toaster';
 import { useToast } from '@/components/ui/use-toast';
-import { buttons, ca, pump } from '@/public/constants';
+import { buttons, ca, dex } from '@/public/constants';
 import heroimg from '@/public/images/hero.webp';
 import content from '@/public/images/logo.png';
 import Image from 'next/image';
@@ -21,7 +21,7 @@ export default function Hero() {
             <h2 className=" text-4xl font-semibold tracking-tight">Oh shit, here we go again</h2>
 
             <Link
-              href={pump}
+              href={dex}
               className="bg-green-500 text-black p-3 rounded-lg font-light hover:scale-105 text-3xl px-6 mt-6 inline-block hover:bg-green-400"
             >
               Chart

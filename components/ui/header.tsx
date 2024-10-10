@@ -1,6 +1,6 @@
 'use client';
 
-import { dex, pump, telegram, twitter } from '@/public/constants';
+import { dex, telegram, twitter } from '@/public/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';

@@ -5,16 +5,16 @@ import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
 export const ca: string = '';
-export const telegram = 'https://t.me/Carl_JohnsonSOL';
+export const telegram = 'https://t.me/CarlJohnsonSUI';
 ``;
 export const twitter = 'https://x.com/CarlJohnsonSui';
 export const dextools = '';
 
 // export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
-export const dex =
-  true && ca != '' ? `https://dexscreener.com/solana/bxjdawdughr8sn81mgefzfasvtuvb4ugpabqkqr58lnm` : '';
+export const dex = '';
+// export const dex = true && ca != '' ? `` : '';
 
-export const pump: string = ca != '' ? `https://www.pump.fun/${ca}` : '';
+// export const pump: string p= ca != '' ? `https://www.pump.fun/${ca}` : '';
 
 export const buttons = [
   { text: 'Twitter', url: twitter, img: twitterimg },
