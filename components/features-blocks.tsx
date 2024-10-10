@@ -12,13 +12,11 @@ export default function FeaturesBlocks() {
           CA:&nbsp;&nbsp;
           <button
             onClick={() => {
-              navigator.clipboard.writeText('8wpeqnTNsqSCxfSsXp7a7o7oQePqs9MgEff915gAmNUR');
+              navigator.clipboard.writeText('');
               alert('Copied!');
             }}
             className="cursor-copy text-cyan-100"
-          >
-            8wpeqnTNsqSCxfSsXp7a7o7oQePqs9MgEff915gAmNUR
-          </button>
+          ></button>
           {/* </CopyToClipboard> */}
         </h1>
         <h1 className="text-6xl textShadow">Tokenomics</h1>

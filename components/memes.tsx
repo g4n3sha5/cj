@@ -3,7 +3,7 @@
 import heroimg from '@/public/images/hero.webp';
 // import caption from '@/public/images/memes-caption.png';
 import meme1 from '@/public/images/meme1.webp';
-import meme2 from '@/public/images/meme2.webp';
+// import meme2 from '@/public/images/meme2.webp';
 import meme3 from '@/public/images/meme3.webp';
 import meme4 from '@/public/images/meme4.webp';
 import meme5 from '@/public/images/meme5.webp';
@@ -13,7 +13,7 @@ import meme8 from '@/public/images/about.webp';
 
 import Image from 'next/image';
 
-const memes = [meme1, meme2, meme3, meme5, meme4, meme6, meme7, meme8];
+const memes = [meme1, meme1, meme3, meme5, meme4, meme6, meme7, meme8];
 
 export default function Memes() {
   return (

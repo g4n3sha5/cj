@@ -16,8 +16,8 @@ export default function Hero() {
     <section className=" bg-white relative pb-[30vh] xl:pb-[30px] min-h-screen overflow-hidden xl:h-screen flex pt-32 lg:pt-10">
       {/* Hero content */}
       <div className="flex flex-wrap w-full pb-44 md:pb-20  items-center h-full gap-y-3  xl:justify-between px-5 lg:px-20 justify-center ">
-        <div className="basis-full xl:basis-1/2 py-10 z-30 flex flex-col items-center ">
-          <div className="bg-theme w-full xl:px-16 py-10 pb-14 text-center lg:text-left my-6  text-white  self-start">
+        <div className="basis-full xl:basis-1/2 py-10 z-30 flex flex-col items-center overflow-hidden">
+          <div className="bg-theme w-full xl:px-16 py-10 pb-14 text-center lg:text-left my-6  text-white  self-start ">
             <h2 className=" text-4xl font-semibold tracking-tight">Oh shit, here we go again</h2>
 
             <Link
