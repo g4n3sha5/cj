@@ -11,7 +11,8 @@ export const twitter = 'https://x.com/CarlJohnsonSui';
 export const dextools = '';
 
 // export const dex = true && ca != '' ? `https://www.pump.fun/${ca}` : '';
-export const dex = '';
+export const dex =
+  'https://movepump.com/token/0xc2468dc4379a8b063c2288a5c8687de179219ad1f5ee0728c3375a4d05060279::cj::CJ';
 // export const dex = true && ca != '' ? `` : '';
 
 // export const pump: string p= ca != '' ? `https://www.pump.fun/${ca}` : '';
