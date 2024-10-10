@@ -1,6 +1,6 @@
 'use client';
 
-import { pump, telegram, twitter } from '@/public/constants';
+import { dex, pump, telegram, twitter } from '@/public/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -12,7 +12,7 @@ const navItems = [
   { label: 'Telegram', url: telegram },
   { label: 'Twitter', url: twitter },
   // { label: 'PumpFun', url: pump },
-  { label: 'Dex Screener', url: dex },
+  { label: 'Chart', url: dex },
 ];
 
 export default function Navbar() {
