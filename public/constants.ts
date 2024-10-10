@@ -4,7 +4,7 @@ import twitterimg from '@/public/images/twitter.png';
 import telegramimg from '@/public/images/telegram.png';
 import dextoolsimg from '@/public/images/dextools.svg';
 
-export const ca: string = '';
+export const ca: string = '0xc2468dc4379a8b063c2288a5c8687de179219ad1f5ee0728c3375a4d05060279::cj::CJ';
 export const telegram = 'https://t.me/CarlJohnsonSUI';
 ``;
 export const twitter = 'https://x.com/CarlJohnsonSui';
