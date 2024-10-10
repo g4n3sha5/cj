@@ -7,7 +7,7 @@ import Twitter from '@/public/images/twitter.png';
 import Dex from '@/public/images/dex.png';
 import DexTools from '@/public/images/dextools.svg';
 import Image from 'next/image';
-import { buttons, dex, dextools, pump, telegram, twitter } from '@/public/constants';
+import { buttons, dex, dextools, telegram, twitter } from '@/public/constants';
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
